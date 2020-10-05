@@ -194,33 +194,99 @@ footer section ul li ul li a img {
   width: 57%;
   height: auto;
   margin-right: 1%;
+  color: var(--text-whitesmoke);
+  font-weight: 400;
+  font-size: 220%;
+  text-align: center;
+  display: flex;
+}
+
+.box-main div {
+  align-self: center;
+  margin: 0 auto 0 24%;
+}
+
+.button-big {
+  text-decoration: none;
+  font-size: 56%;
+  display: inline-block;
+  margin-top: 10%;
+  color: var(--accent-white);
+  background: none;
+  border: 2px solid var(--accent-white);
+  padding: 3% 12%;
+}
+.button-big:hover {
+  background: var(--accent-white);
+  color: var(--accent-gray);
+}
+.button-big:active {
+  color: var(--accent-white);
+  background: none;
 }
 
 .side {
   margin-left: 1%;
   display: flex;
-  flex-grow: 1;
+  flex: 1 1 0px;
   flex-direction: column;
   align-content: flex-end;
+  font-size: 200%;
+  text-align: center;
 }
 
-.side div {
-  background-color: var(--accent-light-rodeo-dust);
+.side section {
+  background-color: var(--text-dark-gray);
   flex-grow: 1;
+  display: flex;
 }
 
-.side div:first-child {
+.side section:first-child {
   margin-bottom: 2.5%;
+  flex: 1 1 0px;
 }
-.side div:last-child {
+.side section:last-child {
   margin-top: 2.5%;
+  flex: 1 1 0px;
+}
+
+.side section:first-child div {
+  align-self: center;
+  margin: 0 auto 0 16%;
+}
+
+.side section:last-child div {
+  align-self: center;
+  margin: 0 16% 0 auto;
+}
+
+.button-small {
+  text-decoration: none;
+  font-size: 56%;
+  margin-top: 10%;
+  display: inline-block;
+  color: var(--accent-white);
+  background: none;
+  border: 2px solid var(--accent-white);
+  padding: 4% 10%;
+}
+
+.button-small:hover {
+  background: var(--accent-white);
+  color: var(--accent-gray);
+}
+.button-small:active {
+  color: var(--accent-white);
+  background: none;
 }
 
 .row-2 div {
   background-color: var(--text-light-gray);
-  flex-grow: 1;
+  flex: 1 1 0px;
   margin-right: 1%;
   margin-left: 1%;
+  max-width: 33%;
+  display: flex;
 }
 .row-2 div:first-child {
   margin-left: 0;
@@ -228,4 +294,13 @@ footer section ul li ul li a img {
 .row-2 div:last-child {
   margin-right: 0;
   margin-left: 1%;
+}
+
+.row-2 div p {
+  color: var(--accent-white);
+  font-size: 220%;
+  text-align: center;
+  align-self: flex-end;
+  margin: 0 auto;
+  margin-bottom: 10%;
 }
