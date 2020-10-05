@@ -17,6 +17,16 @@
   --text-whitesmoke: #f2f2f2;
 }
 
+/* All SELECTORS related to Tablet Landscape */
+.tablet-header {
+  display: none;
+}
+
+.tablet-footer {
+  display: none;
+}
+
+/* All SELECTORS related to Desktop HD */
 /*  Resetting all default margin/padding properties */
 * {
   margin: 0;
@@ -40,14 +50,14 @@ body {
   flex-grow: inherit;
 }
 
-header {
+.desktop-header {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
 }
 
-header img {
+.desktop-header img {
   align-self: flex-start;
 }
 
@@ -305,4 +315,87 @@ footer section ul li ul li a img {
   align-self: flex-end;
   margin: 0 auto;
   margin-bottom: 10%;
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .desktop-header {
+    display: none;
+  }
+
+  body {
+    padding: 30px 30px 10px 30px;
+    flex-direction: column;
+  }
+
+  .tablet-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .tablet-header ul {
+    list-style: none;
+    display: inline;
+  }
+
+  .tablet-header ul li a {
+    margin-left: 8px;
+  }
+
+  .tablet-header ul li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .tablet-header ul li button {
+    background: none;
+    border: none;
+  }
+
+  .tablet-header ul li a img {
+    width: 80%;
+  }
+
+  .tablet-tools li button {
+    display: flex;
+    margin-left: 20px;
+  }
+  .tablet-tools li button:last-child p {
+    font-size: 80%;
+    color: var(--text-dark-gray);
+    margin-left: 4px;
+  }
+
+  .tablet-tools li button p {
+    align-self: flex-end;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  .tablet-footer {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .tablet-footer hr {
+    color: var(--accent-dark-rodeo-dust);
+  }
+
+  .info {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 90%;
+    color: var(--text-black);
+    display: flex;
+    justify-content: space-between;
+  }
+  .info ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .info ul li {
+    margin-left: 20px;
+  }
 }
