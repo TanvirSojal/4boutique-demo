@@ -64,6 +64,18 @@ nav ul li {
   margin-bottom: 3%;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: var(--accent-gray);
+}
+
+nav ul li a:hover {
+  color: var(--text-dark-gray);
+}
+nav ul li a:active {
+  color: var(--text-light-gray);
+}
+
 .nav-gap {
   margin-bottom: 24%;
 }
@@ -91,6 +103,19 @@ footer section ul {
 
 footer section ul li {
   margin-top: 3%;
+}
+
+footer section ul li a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+footer section ul li a:hover {
+  color: var(--text-dark-gray);
+}
+
+footer section ul li a:active {
+  color: var(--text-light-gray);
 }
 
 footer section ul li select {
