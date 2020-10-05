@@ -41,6 +41,7 @@ body {
 }
 
 header {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -157,6 +158,7 @@ button:focus {
 
 footer section ul li ul {
   margin-top: 10%;
+  margin-bottom: 15px;
   display: flex;
 }
 
