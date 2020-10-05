@@ -1,0 +1,151 @@
+/* FONTS USED: Droid Sans Mono, Roboto, Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Accent Colors */
+  --accent-dark-rodeo-dust: #c8a985;
+  --accent-light-rodeo-dust: #f0e3cc;
+  --accent-lighter-rodeo-dust: #f7f2ed;
+  --accent-white: #ffffff;
+  --accent-gray: #999999;
+
+  /* Typography and Background Colors */
+  --text-black: #000000;
+  --text-dark-gray: #666666;
+  --text-light-gray: #cccccc;
+  --text-whitesmoke: #f2f2f2;
+}
+
+/*  Resetting all default margin/padding properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--text-whitesmoke);
+  color: var(--accent-gray);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100vh;
+  padding: 30px 30px 30px 45px;
+  display: flex;
+  flex-grow: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+header img {
+  align-self: flex-start;
+}
+
+nav ul {
+  margin-top: 20vh;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 140%;
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  margin-bottom: 3%;
+}
+
+.nav-gap {
+  margin-bottom: 24%;
+}
+
+.current-page {
+  color: var(--accent-dark-rodeo-dust);
+}
+
+footer {
+  text-transform: uppercase;
+  color: var(--text-black);
+  font-size: 120%;
+
+  flex-grow: 1;
+  display: flex;
+}
+
+footer section {
+  align-self: flex-end;
+}
+
+footer section ul {
+  list-style: none;
+}
+
+footer section ul li {
+  margin-top: 3%;
+}
+
+footer section ul li select {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: var(--text-dark-gray);
+}
+
+footer section ul li select:focus {
+  outline: none;
+}
+
+.search {
+  display: flex;
+  margin-top: 5%;
+}
+
+.search input {
+  height: 80%;
+  background-color: var(--text-whitesmoke);
+  border: 2px solid var(--text-light-gray);
+  font-family: "Open Sans", sans-serif;
+  padding: 3%;
+  width: auto;
+}
+
+.search button {
+  background-color: var(--text-light-gray);
+  border-style: none;
+  /* padding: 3%; */
+  align-self: stretch;
+  width: 30px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+footer section ul li ul {
+  margin-top: 10%;
+  display: flex;
+}
+
+footer section ul li ul li {
+  margin-right: 5%;
+}
+
+footer section ul li ul li a img {
+  height: 100%;
+}
+
+.container {
+  flex-grow: 1;
+  height: initial;
+  margin-left: 45px;
+}
