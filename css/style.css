@@ -496,6 +496,7 @@ footer section ul li ul li a img {
     margin-top: 12%;
     margin-bottom: 3%;
     font-size: 230%;
+    font-weight: 400;
   }
 
   .tablet-landing div p {
@@ -595,7 +596,62 @@ footer section ul li ul li a img {
     display: none;
   }
 
+  .mobile-device {
+    display: block;
+  }
+
+  button {
+    background: none;
+    border: none;
+  }
+
   body {
-    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .landing {
+    background-color: var(--accent-dark-gray);
+    height: 100vh;
+  }
+
+  .mobile-device .landing nav,
+  .mobile-device .landing nav ul {
+    display: flex;
+    margin: 0;
+  }
+
+  .tablet-header {
+    padding: 15px 10px;
+  }
+
+  .tablet-tools li button {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tablet-header ul li {
+    margin-left: 10px;
+  }
+  .tablet-header ul li:first-child {
+    margin-left: 0;
+  }
+
+  .landing div {
+    text-align: center;
+    margin-top: 45%;
+  }
+
+  .landing div h2 {
+    font-weight: 400;
+    font-size: 300%;
+    color: var(--accent-white);
+  }
+  .landing div a {
+    border: 1px solid var(--accent-white);
+    font-size: 100%;
+    margin-top: 6%;
+    padding: 3px 13px;
+    text-align: center;
   }
 }
