@@ -7,8 +7,9 @@
   --accent-dark-rodeo-dust: #c8a985;
   --accent-light-rodeo-dust: #f0e3cc;
   --accent-lighter-rodeo-dust: #f7f2ed;
-  --accent-white: #ffffff;
+  --accent-dark-gray: #333333;
   --accent-gray: #999999;
+  --accent-white: #ffffff;
 
   /* Typography and Background Colors */
   --text-black: #000000;
@@ -23,6 +24,10 @@
 }
 
 .tablet-footer {
+  display: none;
+}
+
+.tablet-landing {
   display: none;
 }
 
@@ -48,6 +53,7 @@ body {
   padding: 30px 30px 30px 45px;
   display: flex;
   flex-grow: inherit;
+  min-height: 900px;
 }
 
 .desktop-header {
@@ -211,6 +217,7 @@ footer section ul li ul li a img {
   font-size: 220%;
   text-align: center;
   display: flex;
+  min-width: fit-content;
 }
 
 .box-main div {
@@ -245,12 +252,15 @@ footer section ul li ul li a img {
   align-content: flex-end;
   font-size: 200%;
   text-align: center;
+  color: var(--accent-white);
 }
 
 .side section {
-  background-color: var(--text-dark-gray);
+  background-color: var(--accent-dark-rodeo-dust);
   flex-grow: 1;
   display: flex;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 
 .side section:first-child {
@@ -297,8 +307,8 @@ footer section ul li ul li a img {
   flex: 1 1 0px;
   margin-right: 1%;
   margin-left: 1%;
-  max-width: 33%;
   display: flex;
+  min-width: fit-content;
 }
 .row-2 div:first-child {
   margin-left: 0;
@@ -317,14 +327,36 @@ footer section ul li ul li a img {
   margin-bottom: 10%;
 }
 
-@media (orientation: landscape) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .desktop-header {
     display: none;
   }
 
   body {
     padding: 30px 30px 10px 30px;
+    min-height: 851px;
     flex-direction: column;
+    min-height: 851px;
+  }
+
+  .hamburger-menu-icon {
+    content: url("../asset/Mobile\ Menu.svg");
+  }
+
+  .logo {
+    content: url("../asset/logo-4boutique.svg");
+  }
+
+  .icon-search {
+    content: url("../asset/icon-search.svg");
+  }
+
+  .icon-heart {
+    content: url("../asset/icon-heart.svg");
+  }
+
+  .icon-shopping-bag {
+    content: url("../asset/icon-shopping-bag.svg");
   }
 
   .tablet-header {
@@ -390,6 +422,7 @@ footer section ul li ul li a img {
     display: flex;
     justify-content: space-between;
   }
+
   .info ul {
     list-style: none;
     display: flex;
@@ -397,5 +430,142 @@ footer section ul li ul li a img {
 
   .info ul li {
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1px 1px 10px 1px;
+    min-height: 1086px;
+    max-width: 764px;
+  }
+  .desktop-header {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    content: url("../asset/Mobile\ Menu-white.svg");
+  }
+
+  .logo {
+    content: url("../asset/Logo-4boutique-white.svg");
+  }
+
+  .icon-search {
+    content: url("../asset/icon-search-white.svg");
+  }
+
+  .icon-heart {
+    content: url("../asset/icon-heart-white.svg");
+  }
+
+  .icon-shopping-bag {
+    content: url("../asset/icon-shopping-bag-white.svg");
+  }
+
+  .tablet-header {
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 0;
+    fill: white;
+    background-color: var(--accent-dark-gray);
+  }
+
+  .tablet-tools li button:last-child p {
+    color: var(--accent-white);
+  }
+
+  .tablet-landing {
+    display: block;
+    background-color: var(--accent-dark-gray);
+    height: 428px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--accent-white);
+    letter-spacing: 1px;
+  }
+  .tablet-landing img {
+    margin-top: 18%;
+  }
+
+  .tablet-landing div h2 {
+    margin-top: 12%;
+    margin-bottom: 3%;
+    font-size: 230%;
+  }
+
+  .tablet-landing div p {
+    font-size: 130%;
+  }
+
+  .tablet-landing div a {
+    font-size: 120%;
+    margin-top: 6%;
+    padding: 1% 4% 1% 4%;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  .row-2 div:last-child {
+    margin-right: 0;
+    margin-left: 1%;
+  }
+
+  .row-1 {
+    margin-bottom: 1px;
+  }
+  .row-2 {
+    margin-top: 1px;
+  }
+
+  .box-main {
+    margin-right: 1px;
+  }
+
+  .box-main div {
+    margin: 0 auto 0 12%;
+  }
+
+  .side {
+    margin-left: 1px;
+  }
+
+  .side section:first-child {
+    margin-bottom: 1px;
+  }
+  .side section:last-child {
+    margin-top: 1px;
+  }
+
+  .side section:first-child div {
+    align-self: center;
+    margin: 0 auto 0 6%;
+  }
+
+  .side section:last-child div {
+    align-self: center;
+    margin: 0 6% 0 auto;
+  }
+
+  .row-2 div {
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+  .row-2 div:first-child {
+    margin-left: 0;
+  }
+  .row-2 div:last-child {
+    margin-right: 0;
+    margin-left: 1px;
+  }
+
+  .tablet-footer {
+    margin: 14px 0 10px 0;
+    display: block;
+  }
+
+  .info {
+    margin: 12px 10px 0 10px;
   }
 }
