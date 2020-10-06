@@ -18,7 +18,7 @@
   --text-whitesmoke: #f2f2f2;
 }
 
-/* All SELECTORS related to Tablet Landscape */
+/* Hiding SELECTORS related to Tablet Landscape */
 .tablet-header {
   display: none;
 }
@@ -28,6 +28,11 @@
 }
 
 .tablet-landing {
+  display: none;
+}
+
+/* Hiding SELECTORS related to small mobile devices */
+.mobile-device {
   display: none;
 }
 
@@ -483,7 +488,7 @@ footer section ul li ul li a img {
     color: var(--accent-white);
     letter-spacing: 1px;
   }
-  .tablet-landing img {
+  .tablet-landing a img {
     margin-top: 18%;
   }
 
@@ -567,5 +572,30 @@ footer section ul li ul li a img {
 
   .info {
     margin: 12px 10px 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .tablet-header {
+    display: none;
+  }
+  .tablet-landing {
+    display: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .tablet-footer {
+    display: none;
+  }
+
+  body {
+    background-color: black;
   }
 }
