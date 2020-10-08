@@ -470,6 +470,7 @@ footer section ul li ul li a img {
 
   .tablet-header {
     padding: 20px 20px 20px 20px;
+    margin-top: 0;
     margin-bottom: 0;
     fill: white;
     background-color: var(--accent-dark-gray);
