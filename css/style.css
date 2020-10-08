@@ -488,23 +488,46 @@ footer section ul li ul li a img {
     font-weight: 400;
     color: var(--accent-white);
     letter-spacing: 1px;
+    overflow: hidden;
   }
-  .tablet-landing a img {
+
+  .down-scroll {
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slides div {
+    flex-shrink: 0;
+    width: 100%;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    scroll-snap-align: center;
+  }
+
+  .slides div a img {
     margin-top: 18%;
   }
 
-  .tablet-landing div h2 {
+  .slides div h2 {
     margin-top: 12%;
     margin-bottom: 3%;
     font-size: 230%;
     font-weight: 400;
   }
 
-  .tablet-landing div p {
+  .slides div p {
     font-size: 130%;
   }
 
-  .tablet-landing div a {
+  .slides div a {
     font-size: 120%;
     margin-top: 6%;
     padding: 1% 4% 1% 4%;
