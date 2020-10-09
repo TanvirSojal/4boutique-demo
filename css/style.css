@@ -656,6 +656,10 @@ footer section ul li ul li a img {
     display: block;
   }
 
+  .container {
+    display: none;
+  }
+
   button {
     background: none;
     border: none;
@@ -726,7 +730,45 @@ footer section ul li ul li a img {
     width: 100%;
   }
 
-  .container {
-    margin-top: 1%;
+  .mobile-container {
+    width: 100%;
+    text-align: center;
+    color: var(--accent-white);
+  }
+  .mobile-container section {
+    margin-top: 3px;
+  }
+
+  .mobile-box-main {
+    width: 100%;
+    padding: 64px 40px;
+    background-color: var(--accent-gray);
+  }
+
+  .mobile-box-main p,
+  .mobile-box-small p,
+  .mobile-box-large p {
+    font-size: 180%;
+  }
+  .mobile-box-main a,
+  .mobile-box-small a,
+  .mobile-box-large a {
+    font-size: 80%;
+    border-width: 1px;
+  }
+
+  .mobile-box-small {
+    padding: 40px;
+    margin-top: 3px;
+    background-color: var(--accent-dark-rodeo-dust);
+  }
+
+  .mobile-box-large {
+    padding: 120px;
+    margin-top: 3px;
+    background-color: var(--accent-gray);
+  }
+  .mobile-box-large p {
+    background-color: lawngreen;
   }
 }
