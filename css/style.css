@@ -639,19 +639,12 @@ footer section ul li ul li a img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 569px) {
   .desktop-header {
     display: none;
   }
 
   .tablet-header {
-    display: none;
-  }
-  .tablet-landing {
-    display: none;
-  }
-
-  .container {
     display: none;
   }
 
@@ -671,11 +664,6 @@ footer section ul li ul li a img {
   body {
     margin: 0;
     padding: 0;
-  }
-
-  .landing {
-    background-color: var(--accent-dark-gray);
-    height: 100vh;
   }
 
   .mobile-device .landing nav,
@@ -700,21 +688,45 @@ footer section ul li ul li a img {
     margin-left: 0;
   }
 
-  .landing div {
-    text-align: center;
-    margin-top: 45%;
+  .slides div a img {
+    margin-top: 18%;
   }
 
-  .landing div h2 {
+  .slides div h2 {
+    margin-top: 24vh;
+    margin-bottom: 3%;
+    font-size: 230%;
     font-weight: 400;
-    font-size: 300%;
     color: var(--accent-white);
   }
-  .landing div a {
-    border: 1px solid var(--accent-white);
-    font-size: 100%;
-    margin-top: 6%;
-    padding: 3px 13px;
+
+  .slides div p {
+    display: none;
+  }
+
+  .slides div a {
+    font-size: 120%;
+    margin-top: 10%;
+    padding: 1% 4% 1% 4%;
+  }
+
+  .slider-nav {
+    position: absolute;
+    z-index: 12;
+    margin-top: 96%;
     text-align: center;
+    width: 100%;
+  }
+
+  .down-scroll {
+    display: block;
+    position: absolute;
+    z-index: 14;
+    margin-top: 115%;
+    width: 100%;
+  }
+
+  .container {
+    margin-top: 1%;
   }
 }
